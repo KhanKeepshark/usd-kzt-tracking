@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"../widgets/main/index.tsx -> @/shared/components\":{\"id\":\"../widgets/main/index.tsx -> @/shared/components\",\"files\":[]}}"

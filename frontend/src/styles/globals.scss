@@ -1,0 +1,8 @@
+// scroll settings
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #888; 
+}

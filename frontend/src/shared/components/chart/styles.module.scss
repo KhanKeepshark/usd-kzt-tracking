@@ -1,0 +1,11 @@
+@use "/src/styles/vars";
+.container {
+    width: 50%;
+    padding: 4px;
+}
+
+@media screen and (max-width: vars.$mobile-lg) {
+    .container {
+        width: 100%;
+    }
+}

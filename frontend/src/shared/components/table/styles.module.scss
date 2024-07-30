@@ -1,0 +1,59 @@
+@use "/src/styles/vars";
+
+.container {
+    width: 50%;
+    position: relative;
+
+    // .heads {
+    //     display: flex;
+    //     padding: 10px;
+    //     background-color: rgb(253, 253, 253);
+    //     border-bottom: 1px solid rgb(219, 219, 219);
+    //     font-size: 14px;
+    // }
+
+    .tableContainer {
+        height: 400px;
+        overflow-y: scroll;
+    }
+    
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: rgb(253, 253, 253);
+
+        th {
+            font-size: 14px;
+            text-align: start;
+            padding: 8px;
+            position: sticky;
+            top: 0; 
+            z-index: 1;
+            background-color: rgb(235, 235, 235);
+        }
+        
+        tr {
+            border-bottom: 1px solid rgb(219, 219, 219);
+            &:hover {
+                background-color: rgb(245, 245, 245);
+            }
+        }
+
+        td {
+            font-size: 14px;
+            text-align: start;
+            padding: 8px;
+        }
+
+    }
+}
+
+@media screen and (max-width: vars.$mobile-lg) {
+    .container {
+        width: 100%;
+         .tableContainer {
+            height: 320px;
+        }
+    }
+}
